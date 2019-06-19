@@ -9,6 +9,11 @@ const Navbar = (props) => {
     if (user) {
       return (
         <Menu.Menu position="right">
+          <Link to="/my_accounts">
+            <Menu.Item>
+              Activity
+            </Menu.Item>
+          </Link>
           <Menu.Item 
             name="Logout"
             onClick={ () => handleLogout(props.history)}
